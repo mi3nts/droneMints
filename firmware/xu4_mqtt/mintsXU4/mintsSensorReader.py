@@ -122,10 +122,25 @@ def sensorSend(sensorID,sensorData,dateTime):
         GUV001Write(sensorData, dateTime)
     if(sensorID=="APDS9002"):
         APDS9002Write(sensorData, dateTime)
+    if(sensorID=="SI114X"):
+        SI114XWrite(sensorData, dateTime)
 
 
-
-
+def SI114XWrite(sensorData,dateTime):
+    dataOut    = sensorData.split(':')
+    sensorName = "SI114X"
+    dataLength = 6
+    if(len(dataOut) == (dataLength +1)):
+        sensorDictionary =  OrderedDict([
+                ("dateTime"     , str(dateTime)), # always the same
+                ("visible"  ,dataOut[0]), # check with arduino code
+                ("ir"     ,dataOut[1]),
+                ("uv"     ,dataOut[2]),
+                ("proximity1"     ,dataOut[3]),
+                ("proximity2"     ,dataOut[4]),
+                ("proximity3"     ,dataOut[5])
+                ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
 def BME280Write(sensorData,dateTime):

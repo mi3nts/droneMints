@@ -1,3 +1,7 @@
+ 
+
+
+
 
 #include <Arduino.h>
 
@@ -41,7 +45,7 @@ uint8_t groveLightPin = A1;
 uint8_t groveUVPin = A2;
 
 
-uint16_t sensingPeriod =1000;
+uint16_t sensingPeriod =500;
 uint16_t initPeriod = 1500;
 
 unsigned long startTime;
@@ -51,10 +55,6 @@ void setup() {
 
   delay(initPeriod);
   initializeSerialMints();
-
-
-
-  // SI1145.Begin();
 
   Serial.println("initializing AS7262");
   delay(initPeriod);
@@ -128,7 +128,7 @@ void loop(){
   delay(sensingPeriod);
     readSI114XMints();
 
-    delayMints(millis() - startTime,10000);
+    delayMints(millis() - startTime,5000);
 
 
 
