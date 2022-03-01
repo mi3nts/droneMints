@@ -48,13 +48,21 @@ def findMacAddress():
 
     return "xxxxxxxx"
 
-
+def findIPSPorts():
+    ports = list(serial.tools.list_ports.comports())
+    ipsPorts = []
+    for p in ports:
+        currentPort = str(p[2])
+        if(currentPort.find("PID=10C4")>=0):
+            ipsPorts.append(str(p[0]).split(" ")[0])
+    return ipsPorts
 
 dataFolderReference       = "/home/teamlary/mintsData/reference"
 dataFolderMQTTReference   = "/home/teamlary/mintsData/referenceMQTT"
 dataFolder                = "/home/teamlary/mintsData/raw"
 dataFolderMQTT            = "/home/teamlary/mintsData/rawMQTT"
 
+ipsPorts                  = findIPSPorts()
 nanoPorts                 = findNanoPorts()
 macAddress                = findMacAddress()
 latestOn                  = False
@@ -84,3 +92,10 @@ print("Sensor Nodes File          : {0}".format(sensorNodesFile))
 print("Nano Ports :")
 for dev in nanoPorts:
     print("\t{0}".format(dev))
+
+    #-------------------------------------------#
+print("IPS Ports :")
+for dev in ipsPorts:
+    print("\t{0}".format(dev))
+    
+    
