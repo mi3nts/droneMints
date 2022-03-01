@@ -17,5 +17,5 @@
 - Arial Vehicle C1+                         : 192.168.1.221
 - Walking Robot C1+                      : 192.168.1.222 
 - Arial Vehicle Jetson                      : 192.168.1.223 
-- Camera Front -: 192.168.1.231
-- Camera Rear -: 192.168.1.232
+- Camera Front -: 192.168.1.180
+- Camera Rear -: 192.168.1.251
