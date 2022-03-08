@@ -19,3 +19,6 @@
 - Arial Vehicle Jetson                      : 192.168.1.223 
 - Camera Front -: 192.168.1.180
 - Camera Rear -: 192.168.1.251
+
+Otter PC 1: otter@192.168.1.2  pswd: utd_0tter! (note the 0 instead of O) 
+Otter PC 2: utd@192.168.1.3    pswd: utd_0tter! 
