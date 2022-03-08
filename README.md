@@ -20,5 +20,15 @@
 - Camera Front -: 192.168.1.180
 - Camera Rear -: 192.168.1.251
 
-Otter PC 1: otter@192.168.1.2  pswd: utd_0tter! (note the 0 instead of O) 
+Otter PC 1: otter@192.168.1.2  pswd: utd_0tter! (note the 0 instead of O)  
+
 Otter PC 2: utd@192.168.1.3    pswd: utd_0tter! 
+
+The TCP forwarding/serial port mapping should be as follows (COM0 = Serial 1):
+ - COM0 (Airmar) on port 42001
+ - COM1 (Manta 1) on port 42002
+ - COM2 (Manta 2) on port 42003
+ - COM3 (Manta 3) on port 42004
+ - COM4 (LISST) on port 42005
+ - MX on port 42006
+
