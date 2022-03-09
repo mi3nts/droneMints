@@ -21,6 +21,8 @@
 - Camera Front Over Water  -: 192.168.1.181
 - Camera Rear Under Water  -: 192.168.1.251
 - Camera Rear Over Water   -: 192.168.1.252
+- NAS Trailer   -: 192.168.1.240
+
 
 Otter PC 1: otter@192.168.1.2  pswd: utd_0tter! (note the 0 instead of O)  
 Otter PC 2: utd@192.168.1.3    pswd: utd_0tter! 
