@@ -21,6 +21,8 @@
 - Camera Front Over Water  -: 192.168.1.181
 - Camera Rear Under Water  -: 192.168.1.251
 - Camera Rear Over Water   -: 192.168.1.252
+- Camera Trailer Inside    -: 192.168.1.253
+- Camera Trailer Outside   -: 192.168.1.254
 - NAS Trailer   -: 192.168.1.240
 
 
