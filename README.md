@@ -43,6 +43,6 @@ The TCP forwarding/serial port mapping should be as follows (COM0 = Serial 1):
 On any of the mfs accessible systems the data can be found @ `mfs/io/groups/lary/mints-imd/raw/sensorID`  The sensor IDs are listed below.
 - Otter (boat): 001e0610c2ed
 - AltaX (drone): 001e0610c1fb
-- Vision60(walking robot): 001e0610c42e
+- Vision60 (walking robot): 001e0610c42e
 
 
